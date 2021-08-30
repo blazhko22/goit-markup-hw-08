@@ -1,0 +1,39 @@
+.header__info-list{
+    display: flex;
+    margin-left: auto;
+}
+.header__info-list li {
+    margin-right: 30px;
+}
+.header__info-list li:last-child {
+    margin-right: 0;
+}
+.header__info-link {
+    height: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $primary-text-color;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    &:hover,
+    &:focus {
+        color: $hover-color;    
+    }
+}
+.header__info-icon {
+    margin-right: 10px;
+    fill: currentColor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+    .header__info-link:hover &,
+    .header__info-link:focus & {
+        fill: $hover-color;
+    }
+}

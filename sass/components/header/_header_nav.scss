@@ -1,0 +1,47 @@
+.header__nav {
+    margin-left: 93px;
+}
+.header__nav-list{
+    display: flex;
+    width: 294px;
+    justify-content: space-between;    
+}
+.header__nav-roster {
+    padding: 25px 0;
+    position: relative;
+}
+.header__nav-line::after {
+    position: absolute;
+    content: ""; 
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 4px $hover-color;
+    border-radius: 2px;
+}
+.header__nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $secondary-text-color;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    &:hover,
+    &:focus {
+        color: $hover-color;
+    }
+}
+.header__general-link {
+    color: $hover-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    &:hover,
+    &:focus {
+        color: $hover-color;
+    }
+}

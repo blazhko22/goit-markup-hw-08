@@ -1,0 +1,30 @@
+.footer__info {
+    margin-top: 60px;
+}
+.footer__logo-color {
+    color: $primary-bg-color;
+}
+.footer__address {
+    font-style: normal;
+    margin-top: 20px;
+}
+.footer__address-list {
+    margin: 0px;
+    padding: 0px;
+}
+.footer__address-list .footer__list-info+ .footer__list-info {
+    margin-top: 9px;
+}
+.footer__address-maps {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $primary-bg-color;
+    
+}
+.footer__list-link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}

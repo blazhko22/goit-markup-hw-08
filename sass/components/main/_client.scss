@@ -1,0 +1,36 @@
+.client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.client__box {
+    display: flex;
+    justify-content: space-between;
+}
+.client__box-link {
+    display: flex;
+    border: 1px solid $box-link-color;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+    color: $box-link-color;
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        border: 1px solid $hover-color;
+        color: $hover-color;
+    }
+}
+.client__svg-link {
+    fill: currentColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        fill: $hover-color;
+    }
+}

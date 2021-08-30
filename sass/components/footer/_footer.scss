@@ -1,0 +1,10 @@
+.footer {
+    background-color: $secondary-bg-color;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 252px;
+}
+.footer__block {
+    display: flex;
+}
