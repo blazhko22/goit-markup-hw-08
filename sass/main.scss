@@ -4,6 +4,7 @@
     @import "./base/general_markup";
     @import "./components/header/header";
     @import "./components/header/header_logo";
+    @import "./components/header/header_mobile";
     @import "./components/header/header_nav";
     @import "./components/header/header_list";
     @import "./components/main/hero";
@@ -17,3 +18,4 @@
     @import "./components/footer/footer_sign-up";
     @import "./components/portfolio/portfolio";
     @import "./components/modal/modal";
+    @import "./components/header/mobile-menu";

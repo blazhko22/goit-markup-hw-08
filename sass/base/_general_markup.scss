@@ -12,8 +12,8 @@ ul {
     padding: 0;
 }
 .container {
+    max-width: 1200px;
     padding: 0 15px;
-    width: 480px;
     margin: 0 auto;
 }
 h1,h2,h3,h4,h5,h6,p {
@@ -26,9 +26,9 @@ img {
 }
 .title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     color: $secondary-text-color;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
