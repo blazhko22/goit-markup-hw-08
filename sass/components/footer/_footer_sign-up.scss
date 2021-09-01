@@ -1,9 +1,11 @@
 .footer__sign-up {
-    margin-top: 72px;
-    margin-left: auto;
+    margin-top: 60px;
+    text-align: center;
 }
 .footer__sign-up-from {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .footer__sign-up-label {
     display: flex;
@@ -12,14 +14,13 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $primary-bg-color;
-    margin-right: 12px;
 }
 .footer__sign-up-text {
     margin-bottom: 20px;
     font-weight: bold;
 }
 .footer__sign-up-input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     font-size: 16px;
     letter-spacing: 0.03em;
@@ -35,7 +36,7 @@
 .footer__sign-up-button {
     width: 200px;
     height: 50px;
-    margin-top: 36px;
+    margin-top: 20px;
     display: flex;
     line-height: 30px;    
     text-align: center;

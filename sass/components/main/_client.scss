@@ -1,28 +1,36 @@
 .client {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .client__box {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .client__box-link {
     display: flex;
     border: 1px solid $box-link-color;
     border-radius: 4px;
-    width: 170px;
+    width: 210px;
     height: 92px;
     align-items: center;
     justify-content: center;
+    margin-right: 30px;
+    margin-bottom: 30px;
     color: $box-link-color;
     transition-property: color, border;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
     &:hover,
     &:focus {
         border: 1px solid $hover-color;
         color: $hover-color;
     }
+}
+.client__box-link:nth-child(2n) {
+    margin-right: 0;
+}
+.client__box-link:nth-child(n+5) {
+    margin-bottom: 0;
 }
 .client__svg-link {
     fill: currentColor;
