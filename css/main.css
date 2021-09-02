@@ -262,6 +262,10 @@ summary {
   display: list-item;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #FFFFFF;
   color: #757575;
@@ -269,6 +273,7 @@ body {
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 ul {
@@ -539,6 +544,12 @@ img {
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+  }
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1264,8 +1275,8 @@ img {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #FFFFFF;
 }
 
@@ -1298,8 +1309,8 @@ img {
 
 .modal__icon {
   position: absolute;
-  top: 8px;
-  left: 9px;
+  top: 5px;
+  left: 6px;
   -webkit-transition-duration: 250ms;
        -o-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -1329,7 +1340,7 @@ img {
 .modal__from-p {
   font-weight: bold;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -1365,7 +1376,7 @@ img {
 
 .modal__from-label {
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 4px;
@@ -1420,8 +1431,8 @@ img {
 
 .modal__from-checkbox {
   position: relative;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.7px;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
@@ -1467,8 +1478,8 @@ img {
 }
 
 .modal__from-checkbox-link {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;

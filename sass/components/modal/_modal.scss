@@ -15,8 +15,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;    
+    width: 450px;
+    height: 609px;    
     background-color: $primary-bg-color;   
 }
 .modal__button {
@@ -39,8 +39,8 @@
 }
 .modal__icon {
     position: absolute;
-    top: 8px;
-    left: 9px;
+    top: 5px;
+    left: 6px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     fill: $extra-color;
@@ -57,7 +57,7 @@
 .modal__from-p {
     font-weight: bold;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: $secondary-text-color;
@@ -81,7 +81,7 @@
 }
 .modal__from-label {
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.01em;
     color: $primary-text-color;
     margin-bottom: 4px;
@@ -119,8 +119,8 @@
 }
 .modal__from-checkbox { 
     position: relative;   
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 1.7px;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
 }
@@ -149,8 +149,8 @@
     border-radius: 4px;
 }
 .modal__from-checkbox-link {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: $hover-color;
