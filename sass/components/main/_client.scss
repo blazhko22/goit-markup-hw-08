@@ -5,15 +5,18 @@
 .client__box {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
 }
 .client__box-link {
     display: flex;
     border: 1px solid $box-link-color;
     border-radius: 4px;
-    width: 210px;
+    max-width: 210px;
     height: 92px;
     align-items: center;
     justify-content: center;
+    flex-basis: calc(100% / 2 - 30px);
     margin-right: 30px;
     margin-bottom: 30px;
     color: $box-link-color;

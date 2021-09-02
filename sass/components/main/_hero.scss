@@ -4,15 +4,13 @@
     padding-top: 118px;
     padding-bottom: 118px;
     max-width: 1600px;
-    max-height: 600px;
     margin-left: auto;
     margin-right: auto;
-    width: 480px;
-    height: 400px;
+    max-height: 600px;
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)), 
-        url(../../../img/header-mobile.jpg);
+        url(../../../img/header.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -24,7 +22,7 @@
     background-image: linear-gradient(to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
-    url(../../../img/header-mobile@2x.jpg);
+    url(../../../img/header@2x.jpg);
   }
 }
 .hero__title {
