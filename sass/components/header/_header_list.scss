@@ -2,15 +2,25 @@
     margin-top: 302px;
     display: flex;
     flex-direction: column-reverse;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+        flex-direction: column;
+        margin-left: auto;
+        align-items: center;
+    }
 }
 .header__info-list li {
     margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;;
+    }
 }
 .header__info-list li:nth-child(1) {
     margin-bottom: 0;
 }
 .header__info-link {
-    height: 16px;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
@@ -26,6 +36,10 @@
     &:focus {
         color: $hover-color;   
         font-size: 34px; 
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+        line-height: 1.17;
     }
 }
 .header__info-icon {

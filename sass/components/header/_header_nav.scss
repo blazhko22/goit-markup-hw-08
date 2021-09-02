@@ -1,9 +1,48 @@
+.header__box {
+    display: flex;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+
+    }
+}
+@media screen and (max-width: 767px) {
+    .header__box {
+      display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .header__nav {
+        margin-left: 88px;
+    }
+    .header__nav-list{
+        display: flex;
+        width: 294px;
+        justify-content: space-between;    
+    }
+}
+
 .header__nav-roster {
     position: relative;
     margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+       margin-bottom: 0;
+       padding: 32px 0;
+    }
 }
 .header__nav-roster:last-child {
     margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+    .header__nav-line::after {
+        position: absolute;
+        content: ""; 
+        top: 2px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-bottom: solid 4px $hover-color;
+        border-radius: 2px;
+    }
 }
 .header__nav-link {
     font-weight: 500;
@@ -18,6 +57,10 @@
     &:hover,
     &:focus {
         color: $hover-color;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.14;           
     }
 }
 .header__general-link {
