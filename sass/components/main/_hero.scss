@@ -6,7 +6,7 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    max-height: 600px;
+    height: 400px;
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)), 
@@ -14,7 +14,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 768px;
+    }
     @media screen and (min-width: 1200px) {
+      max-width: 1600px;
       padding-top: 200px;
       padding-bottom: 200px;
       height: 600px;
@@ -28,7 +32,6 @@
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
     url(../../../img/header@2x.jpg);
-    width: 768px;
   }
 }
 .hero__title {

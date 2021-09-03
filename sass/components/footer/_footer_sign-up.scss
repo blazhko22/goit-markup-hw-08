@@ -6,11 +6,21 @@
         margin-left: auto;
         margin-right: auto;
     }
+    @media screen and (min-width: 1200px) {
+        width: 570px;
+        margin: 0;
+        margin-left: auto;        
+    }
 }
 .footer__sign-up-from {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        align-items: stretch;
+        text-align: start;
+    }
 }
 .footer__sign-up-label {
     display: flex;
@@ -20,6 +30,10 @@
     text-transform: uppercase;
     color: $primary-bg-color;
     width: 100%;
+    @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+        width: 358px;
+    }
 }
 .footer__sign-up-text {
     margin-bottom: 20px;
@@ -58,6 +72,9 @@
     border-radius: 4px;
     padding: 0;
     border: none;
+    @media screen and (min-width: 1200px) {
+        margin-top: 36px;
+    }
 }
 .footer__sign-up-svg {
     margin-left: 10px;
