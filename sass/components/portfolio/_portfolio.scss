@@ -1,14 +1,40 @@
 .folder {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px
+    }
 }
 .folder__filters {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
-.folder__filters .folder__filters-list+ .folder__filters-list {
-    margin-left: 8px;
+@media screen and (min-width: 768px) {
+    .folder__filters .folder__filters-list+ .folder__filters-list {
+        margin-left: 8px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .folder__filters-list {
+        margin-bottom: 15px;
+        margin-left: 8px;
+    }
+    .folder__filters-list:nth-child(3n+1) {
+        margin-left: 0;
+    }
+    .folder__filters-list:nth-child(n+4) {
+        margin-bottom: 0;
+    }
 }
 .folder__filters-button {
     color: $secondary-text-color;
@@ -35,17 +61,29 @@
     background-color: $hover-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.folder__navigation {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+@media screen and (min-width: 768px) {
+    .folder__navigation {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -30px;
+        margin-left: -30px;
+    }
 }
 .folder__navigation-list {
     border: 1px solid #EEEEEE;
-    flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
-    margin-left: 30px;
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 2 - 30px);
+        margin-left: 30px; 
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 3 - 30px);
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .folder__navigation-list:first-child {
+        margin-top: 0;
+    }
 }
 .folder__navigation-link {
    text-decoration: none; 

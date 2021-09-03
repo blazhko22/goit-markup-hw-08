@@ -1589,24 +1589,64 @@ img {
 }
 
 .folder {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .folder {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .folder__filters {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
-.folder__filters .folder__filters-list + .folder__filters-list {
-  margin-left: 8px;
+@media screen and (min-width: 768px) {
+  .folder__filters {
+    margin-bottom: 30px;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .folder__filters {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .folder__filters .folder__filters-list + .folder__filters-list {
+    margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .folder__filters-list {
+    margin-bottom: 15px;
+    margin-left: 8px;
+  }
+  .folder__filters-list:nth-child(3n+1) {
+    margin-left: 0;
+  }
+  .folder__filters-list:nth-child(n+4) {
+    margin-bottom: 0;
+  }
 }
 
 .folder__filters-button {
@@ -1645,25 +1685,46 @@ img {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.folder__navigation {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+@media screen and (min-width: 768px) {
+  .folder__navigation {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
 .folder__navigation-list {
   border: 1px solid #EEEEEE;
-  -webkit-flex-basis: -webkit-calc(100% / 3 - 30px);
-      -ms-flex-preferred-size: calc(100% / 3 - 30px);
-          flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
-  margin-left: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .folder__navigation-list {
+    -webkit-flex-basis: -webkit-calc(100% / 2 - 30px);
+        -ms-flex-preferred-size: calc(100% / 2 - 30px);
+            flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .folder__navigation-list {
+    -webkit-flex-basis: -webkit-calc(100% / 3 - 30px);
+        -ms-flex-preferred-size: calc(100% / 3 - 30px);
+            flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .folder__navigation-list:first-child {
+    margin-top: 0;
+  }
 }
 
 .folder__navigation-link {
@@ -1766,6 +1827,13 @@ img {
   background-color: #FFFFFF;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
 .modal__button {
   position: absolute;
   display: -webkit-box;
@@ -1808,6 +1876,12 @@ img {
 
 .modal__icon:focus, .modal__icon:hover {
   fill: #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__icon {
+    right: 9px;
+  }
 }
 
 .modal__from {
@@ -1923,6 +1997,12 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal__from-checkbox {
+    font-size: 14px;
+  }
+}
+
 .modal__from-checkbox-label {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1970,6 +2050,12 @@ img {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__from-checkbox-link {
+    font-size: 14px;
+  }
 }
 
 .modal__from-button {

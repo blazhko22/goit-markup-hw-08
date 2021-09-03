@@ -18,6 +18,10 @@
     width: 450px;
     height: 609px;    
     background-color: $primary-bg-color;   
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 .modal__button {
     position: absolute;
@@ -47,6 +51,9 @@
     &:focus,
     &:hover {
         fill: $hover-color;
+    }
+    @media screen and (min-width: 1200px) {
+        right: 9px;
     }
 }
 .modal__from {
@@ -123,6 +130,9 @@
     line-height: 1.7px;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 .modal__from-checkbox-label {
     display: flex;
@@ -154,6 +164,9 @@
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: $hover-color;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 .modal__from-button {
     display: flex;
