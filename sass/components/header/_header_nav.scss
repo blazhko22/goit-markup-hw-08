@@ -1,9 +1,6 @@
 .header__box {
     display: flex;
     width: 100%;
-    @media screen and (min-width: 768px) {
-
-    }
 }
 @media screen and (max-width: 767px) {
     .header__box {
@@ -20,6 +17,11 @@
         justify-content: space-between;    
     }
 }
+@media screen and (min-width: 1200px) {
+    .header__nav {
+        margin-left: 93px;
+    }
+}
 
 .header__nav-roster {
     position: relative;
@@ -28,6 +30,9 @@
        margin-bottom: 0;
        padding: 32px 0;
     }
+    @media screen and (min-width: 768px) {
+        padding: 25px 0;
+     }
 }
 .header__nav-roster:last-child {
     margin-bottom: 0;

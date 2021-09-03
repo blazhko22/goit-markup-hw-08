@@ -3,10 +3,19 @@
     padding: 0;
     margin-left: auto;
     margin-right: auto;
-    max-width: 480px;
     height: 603px;
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        height: 463px;
+    }
 }
 .footer__block {
     padding-top: 60px;
     padding-bottom: 60px;   
+}
+.footer__block-box {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }

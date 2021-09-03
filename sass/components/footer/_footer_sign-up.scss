@@ -1,6 +1,11 @@
 .footer__sign-up {
     margin-top: 60px;
     text-align: center;
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .footer__sign-up-from {
     display: flex;

@@ -14,9 +14,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
-    @media screen and (min-width: 480px) {
-      width: 480px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      height: 600px;
     }
 }
 @media (min-device-pixel-ratio: 2),
@@ -27,6 +28,7 @@
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
     url(../../../img/header@2x.jpg);
+    width: 768px;
   }
 }
 .hero__title {
@@ -38,6 +40,14 @@
     text-transform: uppercase;
     margin: 0px auto 30px auto;
     width: 360px;
+    @media screen and (min-width: 1200px) {
+      .hero__title {        
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;        
+        width: 696px;
+      }
+    }
 }
 .hero__button {
     color: $primary-bg-color;
