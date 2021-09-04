@@ -262,10 +262,6 @@ summary {
   display: list-item;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   background-color: #FFFFFF;
   color: #757575;
@@ -273,7 +269,6 @@ body {
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 ul {
@@ -1752,6 +1747,12 @@ img {
   overflow: hidden;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .folder__navigation-img {
+    height: 294px;
+  }
+}
+
 .folder__navigation-link:hover .folder__project-overlay {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
@@ -1785,6 +1786,12 @@ img {
 
 .folder__list-text {
   padding: 20px 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .folder__list-text:first-child {
+    padding: 20px 24px 36px 24px;
+  }
 }
 
 .folder__text-title {
@@ -2093,7 +2100,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 796px;
+  height: 100%;
   padding: 48px 40px;
   background-color: #FFFFFF;
   z-index: 999;

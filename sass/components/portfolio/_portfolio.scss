@@ -101,6 +101,11 @@
     position: relative;
     overflow: hidden;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+   .folder__navigation-img {
+        height: 294px;
+    } 
+}
 .folder__navigation-link:hover .folder__project-overlay {
     transform: translateY(0);
 }
@@ -125,6 +130,11 @@
 .folder__list-text {
     padding: 20px 24px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .folder__list-text:first-child {
+        padding: 20px 24px 36px 24px;
+     } 
+ }
 .folder__text-title {
     color: $secondary-text-color;
     font-weight: 700;
